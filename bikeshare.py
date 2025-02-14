@@ -191,26 +191,24 @@ def user_stats(df):
     print('-' * 40)
 
 
-def display_raw_data(df):
+ 
+  def display_raw_data(df):
     """
     Displays 5 lines of raw data at a time upon user request.
 
     Args:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    # Asking user if they would like to see 5 rows of raw data
+        # Displays 5 lines of raw data at a time upon user request.
 
-    x = "yes"
-    y = "no"
-
-    while True:
-        raw_data = input("\nWould you like to see 5 lines of raw data? Enter yes or no.\n").lower()
-        if raw_data == x:
-            print(df.sample(n=5))
-        elif raw_data == y:
-            break
-        else:
-            print('please type out yes or no')
+        while True:
+            raw_data = input("\nWould you like to see 5 lines of raw data? Enter yes or no.\n").lower()
+            if raw_data == 'yes':
+                print(df.sample(n=5))
+            elif raw_data == 'no':
+                break
+            else:
+                print('Please type out yes or no')
 
 def main():
 
