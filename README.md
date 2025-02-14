@@ -7,10 +7,10 @@ February 13th, 2025
 Bikeshare
 
 ### Description
-Describe what your project is about and what it does
+This project is about getting statstics on the biek sharing program for New York City, Chicago, and Washing for teh first 6 months of 2017
 
 ### Files used
-Include the files used
+chicago.csv, new_york_city.csv, and washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
