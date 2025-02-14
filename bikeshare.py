@@ -94,11 +94,7 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
-    # restart if no data is available on filtered criteria
-    if df.empty:
-        print('No data available for the selected filters.')
-        return
-    # Display the most common month
+       # Display the most common month
     common_month = df['month'].mode()[0]
     print('Most Common Month:', common_month)
 
@@ -119,11 +115,7 @@ def station_stats(df):
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
-    # restart if no data is available on filtered criteria
-    if df.empty:
-        print('No data available for the selected filters')
-        return
-    # Display most commonly used start station
+      # Display most commonly used start station
     common_start_station = df['Start Station'].mode()[0]
     print('Most Common Start Station:', common_start_station)
 
@@ -144,10 +136,6 @@ def trip_duration_stats(df):
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
-    # restart if no data is available on filtered criteria
-    if df.empty:
-        print('No data available for the selected filters')
-        return
     # Display total travel time
     total_travel_time = df['Trip Duration'].sum()
     print('Total Travel Time:', total_travel_time)
@@ -163,11 +151,6 @@ def user_stats(df):
     """Displays statistics on bikeshare users."""
     print('\nCalculating User Stats...\n')
     start_time = time.time()
-
-    # restart if no data is available on filtered criteria
-    if df.empty:
-        print('No data available for the selected filters')
-        return
 
     # Display counts of user types
     user_types = df['User Type'].value_counts()
